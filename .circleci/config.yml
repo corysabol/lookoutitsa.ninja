@@ -34,7 +34,7 @@ jobs:
             git config user.name "ci-build"
       - run: 
           Name: Deploy static site to gh-pages branch
-          command: gh-pages --dist __sapper__/export/
+          command: gh-pages -t --dist __sapper__/export/
 
 workflows:
   version: 2
