@@ -11,9 +11,9 @@ jobs:
         command: | 
           npm install
           npm run export
-    - persist_to_workspace:
-      root: __sapper__
-      paths: export/* 
+      - persist_to_workspace:
+        root: __sapper__
+        paths: export/* 
   deploy:
     docker:
       - image: node
