@@ -1,7 +1,7 @@
 import posts from './_posts.js';
 
-export function get(req, res) {
-  contents = JSON.stringify(posts());
+export async function get(req, res) {
+  const contents = JSON.stringify(posts());
   console.log(contents);
   res.writeHead(200, {
     'Content-Type': 'application/json',
