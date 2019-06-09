@@ -40,7 +40,7 @@
 
 <figure>
 	<img alt='nayrudo shitpuddin' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
-	<figcaption>":(){:|:&};:"</figcaption>
+	<figcaption>I do stuff with computers. Hiyah!</figcaption>
 </figure>
 
 <p><strong>This site is under construction. Come back later for some ninja shit.</strong></p>
