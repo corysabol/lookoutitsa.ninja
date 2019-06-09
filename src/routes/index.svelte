@@ -39,8 +39,8 @@
 <h1>I am but a shadow.</h1>
 
 <figure>
-	<img alt='I'm naruto' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
-	<figcaption>:(){:|:&};:</figcaption>
+	<img alt='I\'m naruto' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
+	<figcaption>:(){:|:\&};:</figcaption>
 </figure>
 
 <p><strong>This site is under construction. Come back later for some ninja shit.</strong></p>
