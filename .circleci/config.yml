@@ -20,10 +20,10 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-        at: __sapper__
+          at: __sapper__
       - add_ssh_keys:
-        fingerprints:
-          - "d0:b7:4d:73:27:2b:b9:0c:8c:a1:37:4e:54:a1:b8:90"
+          fingerprints:
+            - "d0:b7:4d:73:27:2b:b9:0c:8c:a1:37:4e:54:a1:b8:90"
       - run:
           name: install gh-pages npm package
           command: |
@@ -39,12 +39,12 @@ workflows:
   main:
     jobs:
       - build:
-        filters:
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
       - deploy:
-        requires:
-          - build
-        filters:
-          branchs:
-            only: master
+          requires:
+            - build
+          filters:
+            branchs:
+              only: master
