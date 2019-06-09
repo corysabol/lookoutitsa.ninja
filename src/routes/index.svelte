@@ -39,7 +39,7 @@
 <h1>I am but a shadow.</h1>
 
 <figure>
-	<img alt='I\'m naruto' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
+	<img alt='nayrudo shitpuddin' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
 	<figcaption>:(){:|:\&};:</figcaption>
 </figure>
 
