@@ -6,9 +6,11 @@ jobs:
       - image: node
     steps:
       - checkout
-      - run: | 
-        npm install
-        npm run export
+      - run: 
+        name: build project
+        command: | 
+          npm install
+          npm run export
     - persist_to_workspace:
       root: __sapper__
       paths: export/* 
@@ -22,10 +24,12 @@ jobs:
       - add_ssh_keys:
         fingerprints:
           - "d0:b7:4d:73:27:2b:b9:0c:8c:a1:37:4e:54:a1:b8:90"
-      - run: |
-        npm install -g --silent gh-pages
-        git config user.email "ci-build@lookoutitsa.ninja"
-        git config user.name "ci-build"
+      - run:
+        name: install gh-pages npm package
+        command: |
+          npm install -g --silent gh-pages
+          git config user.email "ci-build@lookoutitsa.ninja"
+          git config user.name "ci-build"
       - run: 
         Name: Deploy static site to gh-pages branch
         command: gh-pages --dist __sapper__/export/
