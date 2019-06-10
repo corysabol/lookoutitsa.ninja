@@ -5,6 +5,19 @@
 import fs from 'fs';
 import path from 'path';
 import marked from 'marked';
+import yaml from 'js-yaml';
+
+const parseFrontMatter = text => {
+  const regex = /@@@@@\n*(.*?)\n*@@@@@\n*(.*)/gms;
+  const match = regex.exec(text);
+  const frontMatter = match[1];
+  const body = match[2];
+  // parse the front matter to json
+  return {
+    frontMatter: yaml.safeLoad(frontMatter),
+    markdown: body,
+  };
+};
 
 export default () =>
   fs
@@ -15,8 +28,13 @@ export default () =>
       //const { content, metadata } = process_markdown(markdown);
       //TODO syntax highlighting
 
-      const html = marked(markdown);
+      // Parse the front matter
+      const parsed = parseFrontMatter(markdown);
+      const html = marked(parsed.markdown);
       return {
+        title: parsed.frontMatter.title,
+        date: parsed.frontMatter.date,
+        summary: parsed.frontMatter.summary,
         html,
         slug: file.replace(/^\d+-/, '').replace(/\.md$/, ''),
         file,
