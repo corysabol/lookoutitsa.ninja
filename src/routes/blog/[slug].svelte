@@ -3,9 +3,13 @@
     const { slug } = params;
 
     const res = await this.fetch(`blog/${slug}.json`);
-    const content = await res.json();
 
-    return { content };
+    if (res.status === 200) {
+      const content = await res.json();
+      return { content };
+    }
+
+    this.error(404, 'No dice, Ace.');
   }
 </script>
 
