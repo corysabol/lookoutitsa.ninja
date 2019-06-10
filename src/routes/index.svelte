@@ -2,6 +2,8 @@
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
+    color: inherit;
+    background-color: inherit;
 	}
 
 	h1 {
@@ -9,20 +11,28 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
+    color: inherit;
+    background-color: inherit;
 	}
 
 	figure {
 		margin: 0 0 1em 0;
+    color: inherit;
+    background-color: inherit;
 	}
 
 	img {
 		width: 100%;
 		max-width: 400px;
 		margin: 0 0 1em 0;
+    color: inherit;
+    background-color: inherit;
 	}
 
 	p {
 		margin: 1em auto;
+    color: inherit;
+    background-color: inherit;
 	}
 
 	@media (min-width: 480px) {
