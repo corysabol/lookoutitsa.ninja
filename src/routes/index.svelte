@@ -44,3 +44,7 @@
 </figure>
 
 <p><strong>This site is under construction. Come back later for some ninja shit.</strong></p>
+
+<!-- dirty hack to customize the github pages 404 page 
+  with our own that is still able to be built with sapper and svetle -->
+<a href='/404' style='visibility:hidden'></a>
