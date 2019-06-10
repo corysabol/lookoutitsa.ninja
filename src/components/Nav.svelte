@@ -75,7 +75,7 @@
     top: 15px;
     right: 75px;
   }
-
+  
   .theme-switch {
     display: inline-block;
     height: 34px;
@@ -84,6 +84,23 @@
     right: 10px;
     top: 10px;
     width: 60px;
+  }
+  
+  @media (max-width: 490px) {
+    em {
+      font-size: 0.8rem;
+      position: absolute;
+      top: 35px;
+      right: 15px;
+    }
+    .theme-switch {
+      display: inline-block;
+      height: 34px;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      width: 60px;
+    }
   }
 
   .theme-switch input {
