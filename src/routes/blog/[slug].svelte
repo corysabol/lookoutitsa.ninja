@@ -18,10 +18,11 @@
 </script>
 
 <svelte:head>
-  <title>{content.slug}</title>
+  <title>{content.title}</title>
 </svelte:head>
 
-<h1>{content.slug}</h1>
+<h1>{content.title}</h1>
+<h2>{content.date} - {content.author}</h2>
 
 <div class='content'>
   {@html content.html}

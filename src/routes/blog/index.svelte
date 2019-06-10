@@ -31,7 +31,7 @@
 				waiting for the 'click' event -->
 		<li>
       <a rel='prefetch' href='blog/{post.slug}'>{post.title}</a>
-      <p>{post.date}</p>
+      <p>{post.date} - {post.author}</p>
       <p>{post.summary}</p>
     </li>
 	{/each}

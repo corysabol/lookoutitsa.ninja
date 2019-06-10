@@ -35,6 +35,7 @@ export default () =>
         title: parsed.frontMatter.title,
         date: parsed.frontMatter.date,
         summary: parsed.frontMatter.summary,
+        author: parsed.frontMatter.author,
         html,
         slug: file.replace(/^\d+-/, '').replace(/\.md$/, ''),
         file,
