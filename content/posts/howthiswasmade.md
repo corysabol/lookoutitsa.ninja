@@ -19,7 +19,7 @@ is going to show you exactly how I built this very site that you're reading this
 
 ## Enter Sapper + Svelte + CircleCI + Github Pages
 
-![](https://raw.githubusercontent.com/corysabol/lookoutitsa.ninja/websitedevelopment_blog_post/static/techstacklogos.png)
+![](/static/techstacklogos.png)
 
 For this website I wanted it to meet a few criteria:
 
