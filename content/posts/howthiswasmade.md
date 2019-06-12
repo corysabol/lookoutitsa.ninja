@@ -92,6 +92,12 @@ I'm going to spare myself from writing all the mundane details of getting setup 
 
 Let's take a look at the `.circleci/config.yml` file that I had put together for this project.
 
+```js
+// random js
+const foo = bar => bar.baz();
+foo(new Bar()).map(baz => baz * 2);
+```
+
 ```yaml
 version: 2.1
 

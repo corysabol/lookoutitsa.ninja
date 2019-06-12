@@ -45,7 +45,7 @@ code {
   border-radius: 2px;
 }
 
-/*code {
+pre code {
   background: #f4f4f4;
   border: 1px solid #ddd;
   border-left: 3px solid #f36d33;
@@ -60,7 +60,7 @@ code {
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
-}*/
+}
 
 img {
   max-width: 80%;
@@ -75,6 +75,49 @@ blockquote {
   body {
     font-size: 16px;
   }
+}
+
+/*hljs stuff*/
+.hljs,
+.hljs-subst {
+  color: #333;
+}
+.hljs-comment {
+  color: #999;
+}
+.hljs-tag {
+  color: #170;
+}
+.hljs-keyword {
+  color: #708;
+}
+.hljs-attr {
+  color: #333;
+}
+.hljs-number {
+  color: #164;
+}
+.hljs-type,
+.hljs-string,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-quote,
+.hljs-template-tag,
+.hljs-deletion {
+  color: rgb(16, 94, 16);
+}
+.hljs-title,
+.hljs-section {
+  color: rgb(16, 94, 16);
+}
+.hljs-literal {
+  color: #170;
+}
+.hljs-meta {
+  color: #555;
+}
+.hljs-meta-string {
+  color: #555;
 }
 
 /*Custom light dark stuff*/
