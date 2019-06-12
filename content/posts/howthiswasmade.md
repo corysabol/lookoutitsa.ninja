@@ -19,11 +19,20 @@ is going to show you exactly how I built this very site that you're reading this
 
 ## Enter Sapper + Svelte + CircleCI + Github Pages
 
-Foo
+For this website I wanted it to meet a few criteria:
+
+- Be fast
+  - This meant that it was likely going to need to be a static site
+- Be simple and clean in design
+- Be easy to maintain
+- Support authoring blog posts in markdown (but isn't is a static site tho? We'll get to that)
+
+So, having also just learned of [Svelte](https://svelte.dev/), which is designed to build fast slim web UI's (the word literally means slim or slender), I decided that it might be good fit and that I would like an excuse to give it a shot. Well that's where 
+[Sapper]() comes into play.
 
 ### The Setup
 
-Bar
+![](https://media.giphy.com/media/ZFbvG2eF923te/giphy.gif)
 
 ### Continuous Deployment
 
