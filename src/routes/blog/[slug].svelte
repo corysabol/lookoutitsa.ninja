@@ -1,4 +1,7 @@
 <script context="module">
+  import Post from '../../components/Post.svelte';
+  import { onMount } from 'svelte';
+
   export async function preload({params, query}) {
     const { slug } = params;
 
@@ -21,9 +24,12 @@
   <title>{content.title}</title>
 </svelte:head>
 
-<h1>{content.title}</h1>
+<Post content={content}></Post>
+
+<!--<h1>{content.title}</h1>
 <h2>{content.date} - {content.author}</h2>
 
 <div class='content'>
   {@html content.html}
 </div>
+-->

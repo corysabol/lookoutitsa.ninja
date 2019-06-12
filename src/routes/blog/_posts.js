@@ -6,6 +6,7 @@ import fs from 'fs';
 import path from 'path';
 import marked from 'marked';
 import yaml from 'js-yaml';
+import hljs from 'highlight.js';
 
 const parseFrontMatter = text => {
   const regex = /@@@@@\n*(.*?)\n*@@@@@\n*(.*)/gms;
@@ -30,6 +31,16 @@ export default () =>
 
       // Parse the front matter
       const parsed = parseFrontMatter(markdown);
+
+      marked.setOptions({
+        gfm: true,
+        headerIds: true,
+        highlight: (code, lang) => {
+          console.log(hljs.highlight(lang, code).value);
+          return hljs.highlight(lang, code).value;
+        },
+      });
+
       const html = marked(parsed.markdown);
       return {
         title: parsed.frontMatter.title,
