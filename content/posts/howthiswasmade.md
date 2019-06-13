@@ -417,7 +417,7 @@ Writing new posts is really simple. I just fire up my favorite editor, which hap
 
 ## Conclusion
 
-Obviously, this is the most user friendly way of doing something like this, and it requires a new build every time I want to change something. Also, if I want to keep posts in a github branch as I'm working on the content, the post itself is public while in a draft stat through the repo itself.
+Obviously, this is not the most user friendly way of doing something like this, and it requires a new build every time I want to change something. Also, if I want to keep posts in a github branch as I'm working on the content, the post is public while in a draft state through the repo itself.
 
 However, none of these are really issues for me, and I'm really happy with this setup and with Sapper and Svelte. They are awesome tools that deliver an enjoyable dev experience.
 
