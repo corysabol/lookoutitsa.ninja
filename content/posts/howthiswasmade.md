@@ -88,7 +88,7 @@ After that it was time to move into setting up the CI/CD pipeline with CircleCI.
 
 First I had to simply create an account on CircleCI, which was super easy. I just logged in using Github and configured my repo to be tracked with CircleCI. It's free for public repositories :D
 
-I'm going to spare myself from writing all the mundane details of getting setup with CirleCI and suggest that if you're follwoing along, please consult the [CircleCI docs on open source projects](https://circleci.com/docs/2.0/oss/).
+I'm going to spare myself from writing all the mundane details of getting setup with CirleCI and suggest that if you're following along, please consult the [CircleCI docs on open source projects](https://circleci.com/docs/2.0/oss/).
 
 Let's take a look at the `.circleci/config.yml` file that I had put together for this project.
 
@@ -263,7 +263,7 @@ That's really it for setting up the continuous deployment of the site. Pretty si
 
 Alright, so this is something that I really like about this setup. The ability to write my posts in markdown and then have them be compiled to HTML as part of the site's build process. Sapper makes this pretty easy to accomplish.
 
-Let's look at the follwoing file - `src/routes/blog/_posts.js`
+Let's look at the following file - `src/routes/blog/_posts.js`
 
 ```js
 // This file is called `_posts.js` rather than `posts.js`, because
