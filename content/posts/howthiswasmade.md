@@ -429,6 +429,6 @@ There's still a lot I want to do with this project such as:
 - imporove the CSS styling and overall visual design
 - implement non-invasive, non-tracking (no cookies), analytics
   - basically just page views, I may do this with an AWS lambda and some other stuff
-- and many more fun thing
+- and many more fun things
 
 Thanks for reading, fellow Ninja.
