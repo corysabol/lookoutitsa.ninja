@@ -7,7 +7,7 @@ author: "Cory Sabol"
 
 ## Motivation
 
-Well, you see I've owned lookoutitsa.ninja domain for a good while now.
+Well, you see I've owned the lookoutitsa.ninja domain for a good while now.
 I never really got around to doing anything with it though. Then pretty recently I learned of
 [Sapper](https://sapper.svelte.dev/). In an effort to learn Sapper and Svelte I decided that I would finally put something up on
 the net at lookoutitsa.ninja. As I began hacking away with Sapper + Svelte I realized that what I really
@@ -29,7 +29,7 @@ For this website I wanted it to meet a few criteria:
 - Be easy to maintain
 - Support authoring blog posts in markdown (but isn't is a static site tho? We'll get to that)
 
-So, having also just learned of [Svelte](https://svelte.dev/), which is designed to build fast slim web UI's (the word literally means slim or slender), I decided that it might be good fit and that I would like an excuse to give it a shot. But I still need a way to generate a static site. Well that's where [Sapper](https://sapper.svelte.dev/) comes into play.
+So, having also just learned of [Svelte](https://svelte.dev/), which is designed to build fast slim web UI's (the word literally means slim or slender), I decided that it might be good fit and that I would like an excuse to give it a shot. But I still needed a way to generate a static site. Well that's where [Sapper](https://sapper.svelte.dev/) comes into play.
 
 > "Sapper is a framework for building web applications of all sizes, with a beautiful development experience and flexible filesystem-based routing."
 
@@ -179,19 +179,19 @@ how to run the. Then there is the `build` job. The build job breaks down into pl
 
 1. Use docker for the job environment
 
-- Specifically use a node image
+   - Specifically use a node image
 
 2. Run the following steps in the environment
 
-- `checkout` the git repo into our environment
-- install the deps with `npm install`
-- build the sapper static site with `npm run export`
-- copy the `CNAME` file into the static export to preserve custom domain settings
-- copy the `circleci` configuration to the static export to make sure branch whitelists work
-- copy the exported `404/index.html` file to the root of the export as `404.html`
-  - this allows the github pages 404 page to be overidden with our own
-- next `persist` the dir `__sapper__/export/*` to the workspace to be used in the next job
-  - This is so that we have the static files available to the next job for deployment
+   - `checkout` the git repo into our environment
+   - install the deps with `npm install`
+   - build the sapper static site with `npm run export`
+   - copy the `CNAME` file into the static export to preserve custom domain settings
+   - copy the `circleci` configuration to the static export to make sure branch whitelists work
+   - copy the exported `404/index.html` file to the root of the export as `404.html`
+     - this allows the github pages 404 page to be overidden with our own
+   - next `persist` the dir `__sapper__/export/*` to the workspace to be used in the next job
+     - This is so that we have the static files available to the next job for deployment
 
 Alright, now we can move on to the second job, `deploy`:
 
@@ -221,20 +221,20 @@ I'll break the above job down into plain English like before:
 
 1. Use docker for the job environment
 
-- Specfically use a node image
+   - Specfically use a node image
 
 2. Run the following steps in the environment
 
-- `checkout` the git repo into out environment
-- `attach` the previously persisted directory to the `__sapper__` dir
-- specify the `ssh key` to use based on it's fingerprint
-  - please refer to the [CircleCI docs](https://circleci.com/docs/2.0/gh-bb-integration/#enable-your-project-to-check-out-additional-private-repositories) on how to set up a key pair for your project
-- install a npm package called `gh-pages`
-  - This makes it easier to deploy static assets to a repos gh-pages branch
-- configure the `git email` and `git username`
-- Run the `gh-pages` tool with `-t` to make sure hidden files get pushed as well
-  - this is important so that the `.circleci` dir will get pushed
-  - this command pushes the files found in `__sapper__/export` to the `gh-pages` branch
+   - `checkout` the git repo into out environment
+   - `attach` the previously persisted directory to the `__sapper__` dir
+   - specify the `ssh key` to use based on it's fingerprint
+     - please refer to the [CircleCI docs](https://circleci.com/docs/2.0/gh-bb-integration/#enable-your-project-to-check-out-additional-private-repositories) on how to set up a key pair for your project
+   - install a npm package called `gh-pages`
+     - This makes it easier to deploy static assets to a repos gh-pages branch
+   - configure the `git email` and `git username`
+   - Run the `gh-pages` tool with `-t` to make sure hidden files get pushed as well
+     - this is important so that the `.circleci` dir will get pushed
+     - this command pushes the files found in `__sapper__/export` to the `gh-pages` branch
 
 Phew, okay let's hurry onto the last part!
 
