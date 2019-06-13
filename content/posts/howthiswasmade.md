@@ -27,7 +27,7 @@ For this website I wanted it to meet a few criteria:
   - This meant that it was likely going to need to be a static site
 - Be simple and clean in design
 - Be easy to maintain
-- Support authoring blog posts in markdown (but isn't is a static site tho? We'll get to that)
+- Support authoring blog posts in markdown (but isn't it a static site tho? We'll get to that)
 
 So, having also just learned of [Svelte](https://svelte.dev/), which is designed to build fast slim web UI's (the word literally means slim or slender), I decided that it might be good fit and that I would like an excuse to give it a shot. But I still needed a way to generate a static site. Well that's where [Sapper](https://sapper.svelte.dev/) comes into play.
 
