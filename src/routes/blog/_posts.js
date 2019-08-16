@@ -36,7 +36,6 @@ export default () =>
         gfm: true,
         headerIds: true,
         highlight: (code, lang) => {
-          console.log(hljs.highlight(lang, code).value);
           return hljs.highlight(lang, code).value;
         },
       });
