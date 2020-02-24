@@ -18,7 +18,11 @@
 	figure {
 		margin: 0 0 1em 0;
     color: inherit;
-    background-color: inherit;
+		background-color: inherit;
+	}
+
+	.logo {
+		margin-left: 4em;
 	}
 
 	img {
@@ -46,14 +50,13 @@
 	<title>Don't move a muscle</title>
 </svelte:head>
 
-<h1>I am but a shadow.</h1>
+<h1>Look out it's a ninja</h1>
+<!--<p>Tech, Information Security, and Game Design. Hiyah!</p>-->
 
 <figure>
-	<img alt='nayrudo shitpuddin' src='https://upload.wikimedia.org/wikipedia/commons/4/48/Ninja-japan-fighter-martial-arts-153355.svg'>
-	<figcaption>I do stuff with computers. Hiyah!</figcaption>
+	<img class='logo' alt='nayrudo shitpuddin' src='logo.svg'>
+	<figcaption>Tech, Game Design, and whatever else I'm feeling.</figcaption>
 </figure>
-
-<p><strong>This site is under construction. Come back later for some ninja shit.</strong></p>
 
 <!-- dirty hack to customize the github pages 404 page 
   with our own that is still able to be built with sapper and svetle -->
