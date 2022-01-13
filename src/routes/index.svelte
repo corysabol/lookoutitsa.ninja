@@ -55,7 +55,7 @@
 
 <figure>
 	<img class='logo' alt='nayrudo shitpuddin' src='logo.svg'>
-	<figcaption>Tech, Game Design, and whatever else I'm feeling.</figcaption>
+	<figcaption>Tech, InfoSec, Game Design, and whatever else I'm feeling.</figcaption>
 </figure>
 
 <!-- dirty hack to customize the github pages 404 page 
