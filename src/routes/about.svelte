@@ -10,7 +10,6 @@
 	<li>Hobby Game Designer</li>
 	<li>Professional programmer and Penetration Tester for <a href='https://www.secureideas.com'>Secure Ideas, LLC</a></li>
 	<li>Ninja wannabe</li>
-	<li>Homelabber</li>
 	<li>Probably a human</li>
 </ul>
 
